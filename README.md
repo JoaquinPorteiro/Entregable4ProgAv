@@ -1,4 +1,4 @@
-# 🎵 Mi Playlist Musical
+# 🎵 My Music Now
 
 **Entregable 4 - Programación Avanzada 2025**
 
@@ -8,7 +8,7 @@ Aplicación web para gestionar una playlist de videos musicales con CI/CD comple
 
 ## 📋 Descripción
 
-Mi Playlist Musical es una aplicación web desarrollada en Java con Spring Boot que permite a los usuarios crear y gestionar su propia playlist de videos musicales de YouTube. La aplicación implementa un pipeline completo de CI/CD usando Jenkins, siguiendo las mejores prácticas de desarrollo moderno.
+My Music Now es una aplicación web desarrollada en Java con Spring Boot que permite a los usuarios crear y gestionar su propia playlist de videos musicales de YouTube. La aplicación implementa un pipeline completo de CI/CD usando Jenkins, siguiendo las mejores prácticas de desarrollo moderno.
 
 ### ✨ Características Principales
 

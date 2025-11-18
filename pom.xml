@@ -15,7 +15,7 @@
     <groupId>com.playlist</groupId>
     <artifactId>mi-playlist</artifactId>
     <version>1.0.0</version>
-    <name>Mi Playlist</name>
+    <name>My Music Now</name>
     <description>Aplicación web para gestionar playlist de videos musicales</description>
 
     <properties>

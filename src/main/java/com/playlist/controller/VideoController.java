@@ -43,7 +43,7 @@ public class VideoController {
 
         model.addAttribute("videos", videos);
         model.addAttribute("stats", stats);
-        model.addAttribute("titulo", "Mi Playlist Musical");
+        model.addAttribute("titulo", "My Music Now");
 
         return "index";
     }
