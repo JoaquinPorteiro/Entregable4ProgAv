@@ -121,6 +121,16 @@ public class VideoService {
      * Obtiene los videos más populares (top N por likes)
      */
     public List<Video> obtenerTopVideos(int cantidad) {
+        // Validar que no se pidan demasiados videos
+        if (cantidad > 100) {
+            cantidad = 100;
+        }
+
+        // Validar cantidad mínima
+        if (cantidad < 1) {
+            cantidad = 1;
+        }
+
         log.info("Obteniendo top {} videos por likes", cantidad);
         return videoRepository.findTopByLikes(cantidad);
     }
