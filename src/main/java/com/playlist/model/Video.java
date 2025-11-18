@@ -169,4 +169,34 @@ public class Video {
     public void setFechaAgregado(LocalDateTime fechaAgregado) {
         this.fechaAgregado = fechaAgregado;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Video video = (Video) o;
+        return likes == video.likes &&
+                favorito == video.favorito &&
+                java.util.Objects.equals(id, video.id) &&
+                java.util.Objects.equals(nombre, video.nombre) &&
+                java.util.Objects.equals(link, video.link) &&
+                java.util.Objects.equals(fechaAgregado, video.fechaAgregado);
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(id, nombre, link, likes, favorito, fechaAgregado);
+    }
+
+    @Override
+    public String toString() {
+        return "Video{" +
+                "id='" + id + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", link='" + link + '\'' +
+                ", likes=" + likes +
+                ", favorito=" + favorito +
+                ", fechaAgregado=" + fechaAgregado +
+                '}';
+    }
 }
