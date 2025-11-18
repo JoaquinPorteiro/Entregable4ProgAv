@@ -19,6 +19,11 @@ public class VideoService {
 
     private static final Logger log = LoggerFactory.getLogger(VideoService.class);
 
+     // Constantes para límites de videos
+    private static final int MAX_TOP_VIDEOS = 100;
+    private static final int MIN_TOP_VIDEOS = 1;
+
+
     private final VideoRepository videoRepository;
 
     @Autowired
@@ -122,13 +127,13 @@ public class VideoService {
      */
     public List<Video> obtenerTopVideos(int cantidad) {
         // Validar que no se pidan demasiados videos
-        if (cantidad > 100) {
-            cantidad = 100;
+        if (cantidad > MAX_TOP_VIDEOS) {
+            cantidad = MAX_TOP_VIDEOS;
         }
 
         // Validar cantidad mínima
-        if (cantidad < 1) {
-            cantidad = 1;
+        if (cantidad < MIN_TOP_VIDEOS) {
+            cantidad = MIN_TOP_VIDEOS;
         }
 
         log.info("Obteniendo top {} videos por likes", cantidad);
