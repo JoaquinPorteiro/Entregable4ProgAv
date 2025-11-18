@@ -26,7 +26,7 @@ pipeline {
         JAR_NAME = "${APP_NAME}-${APP_VERSION}.jar"
 
         // Puerto de la aplicación
-        APP_PORT = '8080'
+        APP_PORT = '8081'
 
         // Colores para output (opcional)
         ANSI_COLOR_MAP = 'xterm'

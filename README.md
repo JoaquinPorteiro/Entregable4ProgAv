@@ -141,7 +141,7 @@ deploy-windows.bat --build
 Una vez iniciada la aplicación, abre tu navegador y ve a:
 
 ```
-http://localhost:8080
+http://localhost:8081
 ```
 
 ---
@@ -248,15 +248,15 @@ La aplicación expone los siguientes endpoints REST:
 
 ```bash
 # Agregar un video
-curl -X POST http://localhost:8080/api/videos \
+curl -X POST http://localhost:8081/api/videos \
   -d "nombre=Bohemian Rhapsody" \
   -d "link=https://www.youtube.com/watch?v=fJ9rUzIMcZQ"
 
 # Obtener todos los videos
-curl http://localhost:8080/api/videos
+curl http://localhost:8081/api/videos
 
 # Agregar like
-curl -X POST http://localhost:8080/api/videos/{id}/like
+curl -X POST http://localhost:8081/api/videos/{id}/like
 ```
 
 ---
@@ -348,10 +348,10 @@ Este proyecto aplica los principios de **Clean Code** y **Refactoring** estudiad
 
 ```bash
 # Mac/Linux
-lsof -ti:8080 | xargs kill -9
+lsof -ti:8081 | xargs kill -9
 
 # Windows
-netstat -ano | findstr :8080
+netstat -ano | findstr :8081
 taskkill /PID <PID> /F
 ```
 

@@ -17,7 +17,7 @@ public class MiPlaylistApplication {
         System.out.println("\n" +
                 "=======================================================\n" +
                 "  Mi Playlist Musical - Aplicación iniciada\n" +
-                "  Accede a: http://localhost:8080\n" +
+                "  Accede a: http://localhost:8081\n" +
                 "=======================================================\n");
     }
 }

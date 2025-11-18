@@ -33,7 +33,7 @@ deploy-windows.bat
 ### Paso 3: Abrir en el navegador
 
 ```
-http://localhost:8080
+http://localhost:8081
 ```
 
 **¡Listo! La aplicación ya está funcionando. 🎉**
@@ -89,7 +89,7 @@ Ver guía completa en: [JENKINS-SETUP.md](JENKINS-SETUP.md)
    brew services start jenkins-lts
    ```
 
-2. Abrir `http://localhost:8080`
+2. Abrir `http://localhost:8081`
 
 3. Configurar herramientas (JDK-17, Maven-3.9)
 
@@ -115,10 +115,10 @@ Ver guía completa en: [JENKINS-SETUP.md](JENKINS-SETUP.md)
 
 ```bash
 # Mac/Linux - matar proceso en puerto 8080
-lsof -ti:8080 | xargs kill -9
+lsof -ti:8081 | xargs kill -9
 
 # Windows
-netstat -ano | findstr :8080
+netstat -ano | findstr :8081
 taskkill /PID <PID> /F
 ```
 

@@ -1,18 +1,11 @@
 package com.playlist.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 /**
  * Modelo de datos para representar un video musical en la playlist
  */
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class Video {
 
     private String id;
@@ -21,6 +14,24 @@ public class Video {
     private int likes;
     private boolean favorito;
     private LocalDateTime fechaAgregado;
+
+    /**
+     * Constructor vacío
+     */
+    public Video() {
+    }
+
+    /**
+     * Constructor con todos los parámetros
+     */
+    public Video(String id, String nombre, String link, int likes, boolean favorito, LocalDateTime fechaAgregado) {
+        this.id = id;
+        this.nombre = nombre;
+        this.link = link;
+        this.likes = likes;
+        this.favorito = favorito;
+        this.fechaAgregado = fechaAgregado;
+    }
 
     /**
      * Constructor para crear un nuevo video
@@ -107,5 +118,55 @@ public class Video {
             return link.substring(link.lastIndexOf("/") + 1);
         }
         return null;
+    }
+
+    // Getters y Setters
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public int getLikes() {
+        return likes;
+    }
+
+    public void setLikes(int likes) {
+        this.likes = likes;
+    }
+
+    public boolean isFavorito() {
+        return favorito;
+    }
+
+    public void setFavorito(boolean favorito) {
+        this.favorito = favorito;
+    }
+
+    public LocalDateTime getFechaAgregado() {
+        return fechaAgregado;
+    }
+
+    public void setFechaAgregado(LocalDateTime fechaAgregado) {
+        this.fechaAgregado = fechaAgregado;
     }
 }

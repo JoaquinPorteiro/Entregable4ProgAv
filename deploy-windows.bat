@@ -11,7 +11,7 @@ set APP_NAME=mi-playlist
 set APP_VERSION=1.0.0
 set JAR_NAME=%APP_NAME%-%APP_VERSION%.jar
 set JAR_PATH=target\%JAR_NAME%
-set PORT=8080
+set PORT=8081
 
 REM Banner
 echo.

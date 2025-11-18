@@ -17,7 +17,7 @@ APP_NAME="mi-playlist"
 APP_VERSION="1.0.0"
 JAR_NAME="${APP_NAME}-${APP_VERSION}.jar"
 JAR_PATH="target/${JAR_NAME}"
-PORT=8080
+PORT=8081
 
 # Banner
 echo -e "${BLUE}"

@@ -45,13 +45,6 @@
             <version>2.10.1</version>
         </dependency>
 
-        <!-- Lombok para reducir boilerplate -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-
         <!-- Spring Boot DevTools para desarrollo -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -94,14 +87,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
             </plugin>
 
             <!-- Plugin para ejecutar tests -->

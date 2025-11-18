@@ -2,7 +2,8 @@ package com.playlist.controller;
 
 import com.playlist.model.Video;
 import com.playlist.service.VideoService;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,8 +21,9 @@ import java.util.Optional;
  * Combina endpoints REST y vistas web
  */
 @Controller
-@Slf4j
 public class VideoController {
+
+    private static final Logger log = LoggerFactory.getLogger(VideoController.class);
 
     private final VideoService videoService;
 
